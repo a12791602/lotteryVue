@@ -1,0 +1,189 @@
+@import "../main.scss";
+.login {
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  background: rgb(175, 58, 49);
+  height: 100%;
+  & .login-conter {
+    margin-top: 46px;
+    height: 100%;
+    background: rgb(175, 58, 49);
+    & .login-center-img {
+      @extend %faj;
+      margin: 30px 0px;
+      background: rgb(175, 58, 49);
+      & div {
+        @extend %faj;
+        height: 220px;
+        width: 250px;
+        background: pink;
+        background: url(../../assets/img/one/game.png) no-repeat center center;
+        background-size: 100% 100%;
+      }
+    }
+    & .login-form {
+      @extend %flex;
+      @extend %fdc;
+      padding: 0 20px;
+      background: rgb(175, 58, 49);
+      >div {
+        @extend %flex;
+        @extend %aitems;
+        @extend %sbetween;
+        height: 40px;
+        border: 1px solid #c6c6c6;
+        background: #fff;
+        & i {
+          color: #ae9880;
+          font-size: 20px;
+          width: 40px;
+          text-align: center;
+        }
+        & input {
+          width: 100%;
+          height: 30px;
+          padding: 2px;
+          border: none;
+        }
+        & img {
+          width: 120px;
+          height: 40px;
+        }
+      }
+      .login-rememb {
+        @extend %flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        border: none;
+        background: none;
+        color: #FFF;
+        & input{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .login-pwd,
+      .login-pwdshow,
+      .login-captchaCodeImg {
+        border-top: none;
+      }
+      .login-go {
+        border: none;
+        margin-top: 30px;
+        border-radius: 6px;
+      }
+      & button {
+        width: 100%;
+        border: none;
+        height: 45px;
+        background: #F94E4E;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 6px;
+      }
+      & .login-live {
+        margin-top: 20px;
+        @extend %faj;
+        border: none;
+        background: none;
+        & a {
+          font-size: 14px;
+          background: none;
+          color: #ddd;
+        }
+        & a:nth-child(1) {
+          border-right: 1px solid #ddd;
+          padding-right: 6px;
+          margin-right: 6px;
+          color: #f4c829;
+        }
+        & a:nth-child(2) {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.login-pop {
+  @extend %faj;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.2);
+  >div {
+    @extend %flex;
+    @extend %aitems;
+    line-height: 32px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0px 10px;
+    & i {
+      margin-right: 8px;
+    }
+  }
+}
+
+.el-form-item {
+  margin-bottom: 0px;
+}
+
+.el-form-item__content {
+  @extend %flex;
+  @extend %jcontent;
+  margin-top: 30px;
+}
+
+.el-button--primary {
+  width: 90%;
+  background-color: #dc3b40 !important;
+  border-color: #dc3b40 !important;
+  & span {
+    font-size: 20px;
+  }
+}
+
+.login-title {
+  @extend %faj;
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  height: 46px;
+  width: 100%;
+  background: rgb(175, 58, 49);
+  z-index: 12;
+  & i {
+    @extend %faj;
+    width: 20%;
+    font-size: 30px;
+  }
+  & p {
+    @extend %faj;
+    width: 60%;
+  }
+  & span {
+    @extend %faj;
+    width: 20%;
+  }
+}
+.el-checkbox__input.is-checked+.el-checkbox__label,.el-checkbox{
+  color: #fff !important;
+}
+.el-checkbox__inner{
+  background-color:#AF3A31 !important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color:#F94E4E !important;
+  border-color: #FFF !important;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner{
+  border-color: #FFF !important;
+}
+.el-checkbox__inner:hover{
+  border-color: #FFF !important;
+}

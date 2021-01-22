@@ -1,0 +1,60 @@
+@import "./main.scss";
+.three {
+  min-height: calc(100% + 1px);
+  height: auto;
+  ul {
+    margin-top: 56px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    & li {
+      @extend %flex;
+      @extend %aitems;
+      @extend %fdc;
+      padding: 0px 0px;
+      margin-bottom: 10px;
+      & img {
+        height: 90px;
+        width: 100%;
+      }
+      & .three-box {
+        @extend %flex;
+        @extend %aitems;
+        @extend %sbetween;
+        width: 92%;
+        height: 30px;
+        color: #666;
+      }
+      & .three-content {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        & div {
+          background: #fff;
+          padding: 0 20px;
+        }
+      }
+    }
+    & .loading{
+      position: absolute;
+      top: -8px;
+      left: 0px;
+    }
+  }
+}
+
+.three-title {
+  @extend %faj;
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  height: 46px;
+  width: 100%;
+  background: rgb(175, 58, 49);
+  z-index: 12;
+  & i {
+    position: absolute;
+    left: 16px;
+  }
+}

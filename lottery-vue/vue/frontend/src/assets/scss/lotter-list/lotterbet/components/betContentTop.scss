@@ -1,0 +1,95 @@
+@import '../../../main.scss';
+.bet-content-top {
+    @extend %flex;
+    @extend %sbetween;
+    background: #22563f;
+    color: #caebda;
+    width: 100%;
+    height: 60px;
+    & .content-left {
+      @extend %flex;
+      @extend %fdc;
+      @extend %aitems;
+      width: 50%;
+      height: 60px;
+      border-right: 1px solid #164630;
+      > p {
+        font-size: 16px;
+        height: 28px;
+        line-height: 28px;
+      }
+      & .contnet-left-num {
+        @extend %faj;
+        width: 100%;
+        height: 30px;
+        & p {
+          @extend %faj;
+          width: 22px;
+          height: 22px;
+          font-size: 16px;
+          overflow: hidden;
+          margin: 0px 2px;
+          border-radius: 50%;
+          background: #317455;
+        }
+        & i {
+          font-size: 30px;
+          color: #78ba9e;
+        }
+      }
+      & .contnet-left-shownum {
+        @extend %faj;
+        width: 100%;
+        height: 30px;
+        & .num {
+          @extend %flex;
+          @extend %aitems;
+          height: 30px;
+          & .span {
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            margin: 0px 2px;
+            & div {
+              margin: 0px;
+              @extend %faj;
+              color: #caebda;
+              width: 22px;
+              height: 22px;
+              font-size: 16px;
+              border-radius: 50%;
+              background: #317455;
+            }
+          }
+        }
+        & i {
+          font-size: 30px;
+          color: #78ba9e;
+        }
+      }
+    }
+    & .content-right {
+      @extend %flex;
+      @extend %sbetween;
+      @extend %aitems;
+      width: 50%;
+      height: 60px;
+      padding-left: 10px;
+      & .seasonId {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      & .time {
+        @extend %faj;
+        height: 32px;
+        & p {
+          font-size: 26px;
+        }
+      }
+      & i {
+        font-size: 30px;
+        color: #78ba9e;
+        margin-right: -10px;
+      }
+    }
+  }

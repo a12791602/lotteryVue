@@ -1,0 +1,147 @@
+@import "../../main.scss";
+.datum {
+  & .datum-top {
+    background: #fff;
+    color: #5e5e5e;
+    & li {
+      @extend %flex;
+      @extend %aitems;
+      @extend %sbetween;
+      font-size: 16px;
+      padding: 0 20px;
+      >div {
+        @extend %flex;
+        @extend %aitems;
+      }
+    }
+    & i {
+      margin-left: 10px;
+      color: #ccc;
+      font-size: 20px;
+    }
+    & li:nth-child(1) {
+      height: 70px;
+      border-bottom: 1px solid #E8E8E8;
+      >div {
+        & img {
+          width: 50px;
+          height: 50px;
+          border-radius: 4px;
+        }
+      }
+    }
+    & li:nth-child(2) {
+      height: 56px;
+      border-bottom: 1px solid #E8E8E8;
+      >div {
+        & input {
+          width: 150px;
+          color: #000;
+          padding: 0px 4px;
+        }
+        & input.active {
+          border: 1px solid antiquewhite;
+          text-align: left;
+          color: #5e5e5e;
+        }
+      }
+    }
+    & li:nth-child(3) {
+      height: 56px;
+    }
+  }
+  & .datum-btn {
+    background: #fff;
+    color: #5e5e5e;
+    margin-top: 16px;
+    & li {
+      @extend %flex;
+      @extend %aitems;
+      @extend %sbetween;
+      padding: 0px 20px;
+      font-size: 16px;
+      height: 56px;
+      border-bottom: 1px solid #E8E8E8;
+      >div {
+        @extend %flex;
+        @extend %aitems;
+      }
+    }
+    & i {
+      margin-left: 10px;
+      color: #ccc;
+      font-size: 20px;
+    }
+    & li:nth-child(3) {
+      & select {
+        padding: 5px;
+        border: none;
+        line-height: 22px;
+        font-size: 16px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+    }
+  }
+}
+
+.datum-img {
+  @extend %faj;
+  @extend %fdc;
+  & p {
+    font-size: 16px;
+    padding: 4px 0px;
+  }
+  & img {
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+  }
+}
+
+.datum-img-box {
+  @extend %flex;
+  @extend %jcontent;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  & .datum-hide {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    & .datum-imgs {
+      @extend %faj;
+      position: absolute;
+      left: 0;
+      padding: 1px;
+      height: 60px;
+      & li {
+        margin: 0px 6px;
+        & img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
+}
+
+.datum-but {
+  @extend %faj;
+  height: 60px;
+  & button {
+    border: none;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  & button:nth-child(1) {
+    background: #F94E4E;
+    margin-right: 6px;
+  }
+}

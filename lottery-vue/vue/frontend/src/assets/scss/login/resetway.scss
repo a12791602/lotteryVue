@@ -1,0 +1,46 @@
+@import "../main.scss";
+.resetway-title {
+  @extend %faj;
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  height: 46px;
+  width: 100%;
+  background: rgb(175, 58, 49);
+  z-index: 12;
+  & i {
+    position: absolute;
+    left: 16px;
+  }
+  & b {
+    position: absolute;
+    right: 16px;
+    background: none;
+    font-weight: 400;
+  }
+}
+
+.resetway {
+  @extend %flex;
+  @extend %fdc;
+  height: 100%;
+  background: #fafafa;
+  & .resetway-content {
+    width: 100%;
+    & ul {
+      margin-top: 66px;
+      background: #fff;
+      @extend %flex;
+      @extend %fdc;
+      & li {
+        @extend %flex;
+        @extend %aitems;
+        @extend %sbetween;
+        height: 40px;
+        padding: 0px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}

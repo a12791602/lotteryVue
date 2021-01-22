@@ -1,0 +1,68 @@
+@import '../../../main.scss';
+.betcBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.betc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -80px;
+  @extend %flex;
+  @extend %fdc;
+  width: 320px;
+  background: #fff;
+  & li {
+    @extend %faj;
+    border-bottom: 1px solid #DFE4ED;
+    min-height: 30px;
+    font-size: 14px;
+  }
+  & li:nth-child(1) {
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    background: rgb(175, 58, 49);
+  }
+  & li:nth-child(2) {
+    min-height: 54px;
+    @extend %flex;
+    @extend %fdc;
+    padding: 4px 0px;
+    & p {
+      @extend %flex;
+      @extend %aitems;
+      padding: 4px 0px 4px 60px;
+      width: 100%;
+      & span {
+        width: 30%;
+      }
+      & span.popcon {
+        word-wrap: break-word;
+        width: 178px;
+      }
+      & b {
+        color: red;
+        font-weight: 400;
+      }
+    }
+  }
+  & li:nth-child(3) {
+    height: 40px;
+    & button {
+      width: 50%;
+      border: none;
+      color: #22563f;
+      background: none;
+      font-size: 16px;
+    }
+    & button:nth-child(2) {
+      color: #dc3b40;
+    }
+  }
+}

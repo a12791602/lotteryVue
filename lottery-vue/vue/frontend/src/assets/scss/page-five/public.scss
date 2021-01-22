@@ -1,0 +1,63 @@
+@import "../main.scss";
+.show {
+  @extend %faj;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 20180608;
+  & ul {
+    width: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-130px ;
+    margin-top:-80px ;
+    background: #FFF;
+    border-radius: 4px;
+    & .title {
+      @extend %faj;
+      background: rgb(175, 58, 49);
+      color: #fff;
+      font-size: 16px;
+      height: 40px;
+      border: 1px solid rgb(175, 58, 49);
+      border-radius: 4px 4px 0px 0px;
+      border-bottom: 1px solid #ddd;
+    }
+    & .cont{
+      @extend %faj;
+      font-size: 14px;
+      height: 80px;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      padding: 0px 12px;
+    }
+    & .but{
+      @extend %flex,%sbetween;
+      border-radius: 0px 0px 4px 4px;
+      & button{
+        width: 100%;
+        border:none;
+        background: none;
+        outline: none;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      & button.active{
+        color: #F94E4E;
+      }
+      & button.del{
+        border-right: 0px solid #ddd;
+        border-radius: 0px 0px 0px 4px;
+      }
+      & button.nodel{
+        border-radius: 0px 0px 4px 0px;
+      }
+    }
+  }
+}

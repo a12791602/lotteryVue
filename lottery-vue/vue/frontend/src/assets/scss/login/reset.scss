@@ -1,0 +1,79 @@
+@import "../main.scss";
+.reset-title {
+  @extend %faj;
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  height: 46px;
+  width: 100%;
+  background: rgb(175, 58, 49);
+  z-index: 12;
+  & i {
+    @extend %faj;
+    width: 20%;
+  }
+  & p {
+    @extend %faj;
+    width: 60%;
+  }
+  & span {
+    @extend %faj;
+    width: 20%;
+  }
+}
+
+.reset {
+  @extend %flex;
+  @extend %fdc;
+  height: 100%;
+  background: #fafafa;
+  & .reset-content {
+    width: 100%;
+    & ul {
+      margin-top: 66px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      & li {
+        position: relative;
+        @extend %flex;
+        @extend %aitems;
+        border-bottom: 1px solid #ddd;
+        height: 40px;
+        padding: 0px 16px;
+        & span {
+          font-size: 16px;
+          width: 18%;
+        }
+        & input {
+          border: none;
+          font-size: 16px;
+        }
+        & i {
+          font-size: 20px;
+          position: absolute;
+          right: 20px;
+          color: #ddd;
+        }
+        & img {
+          width: 100px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  & .reset-go {
+    border: none;
+    margin-top: 20px;
+    padding: 0px 16px;
+    & button {
+      width: 100%;
+      border: none;
+      height: 45px;
+      background: #F94E4E;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 6px;
+    }
+  }
+}

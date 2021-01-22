@@ -1,0 +1,104 @@
+@import '../../../main.scss';
+.bet-footer {
+  position: relative;
+  background: #333;
+  color: rgb(175, 58, 49);
+  width: 100%;
+  & .bet-footer-top {
+    position: absolute;
+    top: -60px;
+    background: #22563f;
+    height: 60px;
+    @extend %flex;
+    @extend %fdc;
+    color: #caebda;
+    font-size: 16px;
+    width: 100%;
+    & .bet-footer-tops {
+      @extend %flex;
+      @extend %aitems;
+      height: 50%;
+      & span {
+        color: #ffaf36;
+        width: 210px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 20px;
+        padding-left: 2%;
+      }
+      & p {
+        width: 20%;
+        padding: 0 16px;
+      }
+    }
+    & .bet-footer-buttoms {
+      height: 50%;
+      width: 100%;
+      @extend %flex;
+      @extend %aitems;
+      & input {
+        width: 20%;
+        margin-left: 10px;
+        padding: 0px 4px;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        font-size: 16px;
+      }
+      & p {
+        width: 20%;
+        padding: 0 16px;
+      }
+      & span {
+        width: 45%;
+        @extend %flex;
+        @extend %aitems;
+        @extend %fdr;
+        font-size: 12px;
+        margin-left: 6px;
+        & p {
+          text-align: center;
+          color: #ffaf36;
+          padding: 0;
+          width: auto;
+        }
+      }
+    }
+  }
+  & .bet-footer-buttom {
+    background: #414141;
+    height: 56px;
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    padding: 0px 16px;
+    & .bet-footer-buttom-left {
+      @extend %flex;
+      @extend %aitems;
+      & button {
+        background: none;
+        border: none;
+        color: #ffaf36;
+        font-size: 22px;
+        margin-right: 12px;
+      }
+      & p {
+        color: #fff;
+        font-size: 16px;
+        & span {
+          margin: 0px 4px;
+        }
+      }
+    }
+    & .bet-footer-buttom-right {
+      @extend %faj;
+      font-size: 18px;
+      height: 40px;
+      width: 100px;
+      color: #fff;
+      border-radius: 6px;
+      background: rgb(175, 58, 49);
+    }
+  }
+}

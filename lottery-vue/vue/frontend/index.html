@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="x5-orientation" content="portrait">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+  <!-- <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+  <script src="https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script> -->
+  <script src="/static/mui.min.js"></script>
+  <title>宏發娛樂</title>
+</head>
+
+<body>
+  <div id="app">
+    <img id="load" style="position: fixed;top:50%;left:50%;margin: -50px 0 0 -50px;" src="//static.imagess-google.com/static/img/rolling.svg">
+  </div>
+</body>
+<script type="text/javascript">
+  if (document.getElementById('load') && confirm('文件加载失败，是否刷新')) {
+    location.href = location.origin
+  }
+</script>
+<script type="text/javascript">
+  // document.oncontextmenu = function () {
+  //   return false;
+  // };
+  // document.onkeydown = function () {
+  //   if (window.event && window.event.keyCode == 123) {
+  //     event.keyCode = 0;
+  //     event.returnValue = false;
+  //     return false;
+  //   }
+  // };
+  mui.init({
+    swipeBack: false, //关闭右滑关闭功能（默认就是false）
+    keyEventBind: {
+      backbutton: true //开启back按键监听（默认就是true）
+    }
+  });
+  var quitTime = null;
+  mui.plusReady(function () {
+    mui.back = function () {
+      //首次按键，提示‘再按一次退出应用’
+      if (!quitTime) {
+        //记录第一次按下回退键的时间
+        quitTime = new Date().getTime();
+        //回退到上一页面
+        window.history.go(-1);
+        setTimeout(function () {
+          quitTime = null;
+        }, 500);
+      } else {
+        if ((new Date().getTime() - quitTime) < 500) {
+          quitTime = null;
+          plus.runtime.quit();
+        }
+      }
+    };
+  });
+</script>
+</html>

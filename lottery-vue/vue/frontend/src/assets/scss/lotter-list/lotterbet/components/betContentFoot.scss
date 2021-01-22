@@ -1,0 +1,68 @@
+@import '../../../main.scss';
+.bet-content-foot {
+    padding: 4px 16px 0px;
+    color: #caebda;
+    height: 100%;
+    >div {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      height: 100%;
+      >.bet-list-box {
+        width: 100%;
+        padding-bottom: 240px;
+        & b {
+          & i {
+            color: #f0c930;
+            font-style: normal;
+          }
+        }
+        & .fushi {
+          margin-top: 10px;
+          & li {
+            @extend %flex;
+            @extend %fdc;
+            & p {
+              @extend %flex;
+              margin-bottom: 6px;
+              & b {
+                @extend %flex;
+                align-items: flex-start;
+                @extend %jcontent;
+                width: 14%;
+                padding-top: 6px;
+              }
+              & span {
+                @extend %flex;
+                @extend %fr;
+                width: 86%;
+                & a {
+                  margin: 0px 26px 8px 0px;
+                  @extend %faj;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: #caebda;
+                  color: #212121;
+                }
+                & a.active {
+                  background: #f0c930;
+                  border: #f0c930;
+                }
+              }
+            }
+          }
+        }
+        & .danshi {
+          margin-top: 10px;
+          & textarea {
+            width: 90%;
+            height: 200px;
+            border: 0px;
+            background: #fff;
+            resize: none;
+            padding: 4%;
+          }
+        }
+      }
+    }
+  }

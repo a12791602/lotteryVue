@@ -1,0 +1,32 @@
+@import '../../main.scss';
+.bet {
+  height: 100%;
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  position: relative;
+  overflow: hidden;
+}
+.listStyle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.pageNum0{
+  transition: .6s;
+  transform: translateX(0px);
+}
+.pageNum1{
+  transition: .6s;
+  transform: translateX(460px);
+}
+.bet-content {
+  height: 100%;
+  background: #317455;
+  overflow: hidden;
+  >div {
+    height: 100%;
+  }
+}

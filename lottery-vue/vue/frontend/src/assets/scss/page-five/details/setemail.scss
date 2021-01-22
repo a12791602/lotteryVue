@@ -1,0 +1,129 @@
+@import "../../main.scss";
+.setemail {
+  .setemail-top {
+    @extend %faj;
+    width: 100%;
+    height: 46px;
+    font-size: 20px;
+    background: rgb(175, 58, 49);
+    & i {
+      @extend %faj;
+      width: 20%;
+      color: #fff;
+    }
+    & p {
+      @extend %faj;
+      width: 60%;
+      color: #fff;
+    }
+    & span{
+      @extend %faj;
+      width: 20%;
+    }
+    & ul {
+      @extend %flex;
+      @extend %aitems;
+      width: 20%;
+      border: 1px solid #fff;
+      height: 32px;
+      border-radius: 4px;
+      & li {
+        font-size: 16px;
+        padding: 0px 14px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+      }
+      & .router-link-exact-active.router-link-active {
+        background: #fff;
+        color: #dc3b40;
+      }
+    }
+  }
+  & .setemail-content {
+    height: 100%;
+    & ul {
+      background: #fff;
+      & li {
+        @extend %flex;
+        @extend %aitems;
+        height: 56px;
+        padding: 0px 20px;
+        line-height: 52px;
+        font-size: 16px;
+        border-bottom: 1px solid #e8e8e8;
+        & p {
+          width: 24%;
+        }
+        & input {
+          width: 70%;
+          height: 40px;
+          border: none;
+          padding: 0px 4px;
+        }
+        & .primary{
+          @extend %faj;
+          background: #F94E4E;
+          color: #fff;
+          height: 40px;
+          width: 140px;
+          border-radius: 6px;
+        }
+        & .primarys{
+          @extend %faj;
+          background: #F3F3F3;
+          color: #000;
+          height: 40px;
+          width: 140px;
+          border-radius: 6px;
+        }
+      }
+      & li:nth-child(2) {
+        & input {
+          width: 36%;
+        }
+      }
+    }
+  }
+}
+
+.setemail-but {
+  @extend %flex;
+  @extend %jcontent;
+  margin-top: 40px;
+  height: 36px;
+  & button {
+    padding: 0px;
+    background:#F94E4E;
+    border: none;
+    width: 86%;
+    height: 36px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff !important;
+  }
+}
+
+.yd-btn-primary {
+  color: #fff !important;
+}
+
+.yd-btn-block {
+  font-size: 14px;
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 140px;
+  background: #F94E4E;
+  color: #000;
+  border: 1px solid linear-gradient(to right, #f75f5b, #fead50);
+}
+
+.yd-btn-disabled {
+  background: #ccc;
+}
+
+.el-input {
+  height: 40px;
+  border: none;
+}

@@ -1,0 +1,97 @@
+@import '../../../main.scss';
+.lookAllDiv {
+  @extend %flex;
+  @extend %fdc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #22563f;
+  & .lookAllDivTitle {
+    @extend %faj;
+    width: 100%;
+    height: 50px;
+    line-height: 1.493333rem;
+    background: rgb(175, 58, 49);
+    color: #FFF;
+    font-size: 18px;
+    & i {
+      @extend %faj;
+      width: 20%;
+      font-size: 20px;
+      color: #FFF;
+    }
+    & b.cont {
+      @extend %faj;
+      width: 60%;
+      font-weight: 400;
+    }
+    & span {
+      @extend %faj;
+      width: 20%;
+    }
+  }
+  & .lookAllUlBox {
+    width: 100%;
+    height: 93%;
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    left: 0px;
+    overflow-y: scroll;
+    & .lookAllUl {
+      width: 100%;
+      background: #22563f;
+      padding-bottom: 20px;
+      & li {
+        @extend %flex;
+        & p {
+          @extend %faj;
+          font-size: 14px;
+          color: #caebda;
+          padding: 4px 0px;
+          & a {
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            color: #caebda;
+            & img {
+              width: 200%;
+              height: 600%;
+            }
+          }
+        }
+        & p:nth-child(1) {
+          width: 30%;
+        }
+        & p:nth-child(2) {
+          width: 40%;
+        }
+        & p:nth-child(3) {
+          width: 30%;
+        }
+        & p:nth-child(1) {
+          position: relative;
+          border-right: 1px solid #212121;
+          & i {
+            font-weight: 700;
+            font-size: 16px;
+            color: #212121;
+            position: absolute;
+            right: -8px;
+          }
+        }
+      }
+      & li:nth-child(1) {
+        border-top: 1px solid hsla(0, 0%, 100%, .3);
+        border-bottom: 1px solid #212121;
+        & p:nth-child(1) {
+          border: none;
+        }
+      }
+    }
+  }
+}

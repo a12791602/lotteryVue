@@ -1,0 +1,292 @@
+@import "../../main.scss";
+.betbjkl8 {
+  height: 100%;
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  & .betbjkl8-top {
+    @extend %flex;
+    @extend %sbetween;
+    @extend %aitems;
+    height: 46px;
+    font-size: 16px;
+    padding: 0px 16px;
+    background: rgb(175, 58, 49);
+    background: black;
+    color: #fff;
+    & li {
+      width: 33.33%;
+    }
+    & li:nth-child(2) {
+      width: 46%;
+      text-align: center;
+      font-size: 12px;
+      @extend %faj;
+      & .wangfa {
+        margin: 0px;
+        margin-right: 4px;
+      }
+      & .menu {
+        @extend %faj;
+        padding: 2px 6px;
+        border: 1px solid hsla(0, 0%, 100%, .5);
+        border-radius: 4px;
+        color: #fff;
+        & i {
+          color: #f0c930;
+          font-size: 24px;
+        }
+      }
+      & .menu-list {
+        position: absolute;
+        background: hotpink;
+        left: 0px;
+        top: 43px;
+        @extend %flex;
+        @extend %fdc;
+        width: 100%;
+        & .menu-list-top {
+          padding-left: 16px;
+          @extend %flex;
+          & p {
+            margin: 0;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            padding: 4px 16px;
+            margin-top: 10px;
+            border-radius: 4px;
+            color: #555;
+            font-size: 14px;
+          }
+          & p.active {
+            background: #dc3b40;
+            border: 1px solid #dc3b40;
+            color: #fff;
+          }
+        }
+        & ul {
+          @extend %flex;
+          @extend %fdc;
+          padding: 0px 16px;
+          margin-top: 20px;
+          & li {
+            @extend %flex;
+            @extend %fdc;
+            @extend %fr;
+            width: 100%;
+            color: #dc3b40;
+            & p {
+              border: 1px solid #ddd;
+              color: #666;
+              margin: 8px 8px 8px 0px;
+              padding: 4px 10px;
+            }
+            & p.active {
+              border: 1px solid #dc3b40;
+              color: #dc3b40;
+            }
+          }
+        }
+      }
+    }
+    & li:nth-child(3) {
+      text-align: right;
+    }
+    & i {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  & .betbjkl8-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #e8e4e4;
+    & .lottery-box {
+      @extend %flex;
+      @extend %sbetween;
+      height: 100%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      & .lottery-top {
+        position: absolute;
+        width: 100%;
+        z-index: 20;
+        background: #dc8e91;
+        & p {
+          @extend %flex;
+          @extend %aitems;
+          margin: 0px;
+          padding-left: 16px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #292929;
+          & ul {
+            @extend %flex;
+            @extend %aitems;
+            color: #646464;
+            & li {
+              @extend %faj;
+              background: #f9f9f9;
+              border-radius: 50%;
+              width: 18px;
+              height: 18px;
+              font-size: 12px;
+              margin-right: 4px;
+            }
+          }
+          & span {
+            color: #1143e6;
+            margin-right: 6px;
+            & i {
+              color: #1143e6;
+              margin-left: 6px;
+            }
+          }
+          & i {
+            color: #e2dddd;
+            font-style: normal;
+          }
+        }
+        & .lottery-ms {
+          margin-top: 4px;
+          & p {
+            @extend %flex;
+            width: 100%;
+            border-bottom: 1px solid #eeafb1;
+            & span {
+              color: #3e3e3e;
+              @extend %faj;
+            }
+            & span:nth-child(1) {
+              width: 20%;
+            }
+            & span:nth-child(2) {
+              width: 76%;
+            }
+          }
+          & ul {
+            padding: 0 16px;
+            & li {
+              color: #fff;
+              @extend %flex;
+              @extend %aitems;
+              margin: 10px 0;
+              & i {
+                width: 6%;
+                margin: 0px 22px;
+              }
+              & div:nth-child(1) {
+                width: 20%;
+                @extend %flex;
+                @extend %fdc;
+                @extend %aitems;
+                & span {
+                  color: #3e3e3e;
+                }
+              }
+              & div:nth-child(3) {
+                width: 70%;
+              }
+              & ul {
+                padding: 0;
+                @extend %flex;
+                @extend %fr;
+                & li {
+                  margin: 0 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+      & .lottery-content {
+        height: 100%;
+        z-index: 18;
+        padding: 48px 16px 0px;
+        & .lottery-scoll-box {
+          @extend %flex;
+          @extend %fdc;
+          padding-bottom: 100px;
+          >p {
+            margin: 8px 0px;
+            display: inline;
+            font-size: 14px;
+            & ul {
+              display: inline;
+              & li {
+                display: inline;
+                & span {
+                  color: #ff9831;
+                }
+              }
+            }
+          }
+          & .annotation {
+            & li {
+              margin: 8px 0px;
+              font-size: 14px;
+              display: none;
+              & span {
+                color: #dc3b40;
+              }
+            }
+            & li.active {
+              display: block;
+            }
+          }
+          & .lottery-scoll {
+            @extend %flex;
+            & p {
+              & span {
+                @extend %faj;
+                padding: 4px 6px;
+                margin: 0;
+                width: 40px;
+                border: 1px solid #cacaca;
+                border-radius: 4px;
+              }
+            }
+            & ul {
+              @extend %flex;
+              @extend %fr;
+              & li {
+                @extend %faj;
+                border: 1px solid #cacaca;
+                background: #fff;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                margin: 0px 0px 10px 20px;
+                font-size: 14px;
+              }
+              & li.active {
+                color: #fff;
+                background: #dc3b40;
+                border: #dc3b40 1px solid;
+              }
+            }
+          }
+          & .lottery-scoll2 {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bjkl8popup {
+  .popBut {
+    @extend %faj;
+    background: #EBEBEB;
+    height: 34px;
+    border-radius: 0px 0px 4px 4px;
+    & button {
+      border: none;
+      background: none;
+      font-size: 14px;
+      color: #007bf4;
+    }
+  }
+}

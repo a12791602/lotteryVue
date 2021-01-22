@@ -1,0 +1,679 @@
+@import '../../main.scss';
+.betbj10 {
+  height: 100%;
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  position: relative;
+  overflow: hidden;
+  & .betbj10-top {
+    @extend %flex;
+    @extend %sbetween;
+    @extend %aitems;
+    height: 56px;
+    font-size: 16px;
+    padding: 0px 16px;
+    background: rgb(175, 58, 49);
+    color: #fff;
+    & li {
+      width: 18.33%;
+    }
+    & li:nth-child(2) {
+      width: 71%;
+      text-align: center;
+      font-size: 12px;
+      @extend %faj;
+      & .wangfa {
+        margin: 0px;
+        margin-right: 4px;
+      }
+      & .menu {
+        @extend %faj;
+        padding: 2px 6px;
+        border: 1px solid hsla(0, 0%, 100%, .5);
+        border-radius: 4px;
+        color: #fff;
+        & i {
+          color: #f0c930;
+          font-size: 24px;
+        }
+      }
+      & .menu-list {
+        @extend %flex,%fdc;
+        position: absolute;
+        left: 0px;
+        top: 46px;
+        z-index: 20180608;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.4);
+        & .menu-listShow {
+          background: #317455;
+          height: 42%;
+          overflow: hidden;
+          & .popscroll {
+            width: 100%;
+            height: 42%;
+            position: absolute;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            & .menu-list-top {
+              @extend %flex,%fdc,%fr;
+              width: 100%;
+              & li {
+                @extend %flex;
+                @extend %aitems;
+                @extend %fdr;
+                font-size: 12px;
+                width: 100%;
+                padding: 4px 0px;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+                & .title {
+                  @extend %faj;
+                  height: 24px;
+                  color: #f4c829;
+                  font-size: 16px;
+                  width: 20%;
+                }
+                & .menu-list-list-box {
+                  @extend %flex;
+                  @extend %aitems;
+                  width: 80%;
+                  height: 100%;
+                  & .menu-list-list {
+                    @extend %flex;
+                    @extend %aitems;
+                    @extend %fr;
+                    background: none;
+                    overflow: hidden;
+                    & span {
+                      @extend %faj;
+                      min-width: 60px;
+                      height: 26px;
+                      background: none;
+                      border: 2px solid hsla(0, 0%, 100%, .4);
+                      border-radius: 4px;
+                      margin: 0px 6px 6px 0px;
+                      >a {
+                        color: #eee;
+                        padding: 0 5px;
+                      }
+                    }
+                    & span.active {
+                      border: 1px solid #f4c829;
+                    }
+                  }
+                }
+              }
+              & li.active {
+                border: 1px solid #f4c829;
+              }
+              & li:nth-child(2) {
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              & li:nth-child(3),
+              & li:nth-child(6),
+              & li:nth-child(9) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    & li:nth-child(3) {
+      text-align: right;
+      & ul {
+        @extend %flex;
+        @extend %fr;
+        position: absolute;
+        top: 46px;
+        right: 0px;
+        width: 170px;
+        background: rgba(220, 220, 220, 0.8);
+        padding: 10px 0 10px 10px;
+        border-radius: 0 0 0 10px;
+        & li {
+          @extend %faj;
+          border-radius: 5px;
+          width: 45%;
+          font-size: 14px;
+          color: #666;
+          background: #fff;
+          padding: 6px 0px;
+          margin: 2px;
+        }
+      }
+    }
+    & i {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+
+.listStyle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.pageNum0{
+  transition: .6s;
+  transform: translateX(0px);
+}
+.pageNum1{
+  transition: .6s;
+  transform: translateX(460px);
+}
+.betbj10-content {
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  height: 100%;
+  background: #317455;
+  overflow: hidden;
+  >div {
+    height: 100%;
+    & .betk3-content-top {
+      @extend %flex;
+      @extend %sbetween;
+      background: #22563f;
+      color: #caebda;
+      width: 100%;
+      height: 60px;
+      & .content-left {
+        @extend %flex;
+        @extend %aitems;
+        @extend %fdc;
+        width: 54%;
+        height: 60px;
+        border-right: 1px solid #164630;
+        & p {
+          font-size: 16px;
+          line-height: 28px;
+          & i {
+            margin-left: 6px;
+            font-size: 24px;
+            color: #78ba9e;
+          }
+        }
+        & div {
+          @extend %flex;
+          @extend %aitems;
+          margin-top: 4px;
+          & p {
+            @extend %faj;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            margin: 0px 1px;
+            border-radius: 50%;
+            background: #317455;
+            font-size: 12px;
+            & img {
+              width: 200%;
+              height: 600%;
+            }
+          }
+        }
+        & .contnet-left-num {
+          @extend %faj;
+          width: 100%;
+          height: 16px;
+          & .num {
+            @extend %flex;
+            @extend %aitems;
+            height: 16px;
+            & .span {
+              color: #fff;
+              width: 16px;
+              height: 16px;
+              margin: 0px 1px;
+              font-size: 12px;
+              & div {
+                @extend %faj;
+                margin: 0px;
+                color: #caebda;
+                width: 16px;
+                height: 16px;
+                font-size: 12px;
+                border-radius: 50%;
+                background: #317455;
+              }
+            }
+          }
+          & i {
+            font-size: 30px;
+            color: #78ba9e;
+          }
+        }
+      }
+      & .content-right {
+        @extend %flex;
+        @extend %aitems;
+        @extend %sbetween;
+        width: 46%;
+        height: 60px;
+        padding-left: 10px;
+        & .seasonId {
+          font-size: 16px;
+          line-height: 28px;
+        }
+        & .time {
+          @extend %faj;
+          height: 32px;
+          & p {
+            font-size: 26px;
+          }
+        }
+        & i {
+          font-size: 30px;
+          color: #78ba9e;
+          margin-right: -10px;
+        }
+      }
+    }
+    & .betk3-content-top-pop {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color:rgba(0,0,0,.4);
+      z-index: 2002;
+      & .look {
+        background: #22563f;
+        & li {
+          @extend %flex;
+          & p {
+            @extend %faj;
+            font-size: 14px;
+            color: #caebda;
+            padding: 4px 0px;
+            & a {
+              width: 20px;
+              height: 20px;
+              overflow: hidden;
+              color: #caebda;
+              & img {
+                width: 200%;
+                height: 600%;
+              }
+            }
+          }
+          & p:nth-child(1) {
+            width: 30%;
+          }
+          & p:nth-child(2) {
+            width: 70%;
+          }
+          & p:nth-child(3) {
+            width: 30%;
+          }
+          & p:nth-child(1) {
+            position: relative;
+            border-right: 1px solid #212121;
+            & i {
+              font-weight: 700;
+              font-size: 16px;
+              color: #212121;
+              position: absolute;
+              right: -8px;
+            }
+          }
+        }
+        & li:nth-child(1) {
+          border-top: 1px solid hsla(0, 0%, 100%, .3);
+          border-bottom: 1px solid #212121;
+          & p:nth-child(1) {
+            border: none;
+          }
+        }
+      }
+      .lookAll {
+        @extend %faj;
+        padding: 8px 0px 8px;
+        background: #22563f;
+        & button {
+          border: 1px solid #caebda;
+          background: none;
+          color: #caebda;
+          padding: 4px 20px;
+          border-radius: 4px;
+          margin: 0px 8px;
+        }
+      }
+    }
+    & .betk3-content-foot {
+      padding: 4px 16px 0px;
+      color: #caebda;
+      height: 100%;
+      >div {
+        height: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        >.betssc-list-box {
+          width: 100%;
+          padding-bottom: 240px;
+          & b {
+            & i {
+              color: #f0c930;
+              font-style: normal;
+            }
+          }
+          & .fushi {
+            margin-top: 10px;
+            & li {
+              @extend %flex;
+              @extend %fdc;
+              & p {
+                @extend %flex;
+                margin-bottom: 6px;
+                & b {
+                  @extend %flex;
+                  @extend %jcontent;
+                  align-items: flex-start;
+                  width: 14%;
+                  padding-top: 6px;
+                }
+                & span {
+                  @extend %flex;
+                  @extend %fr;
+                  width: 86%;
+                  & a {
+                    margin: 0px 26px 8px 0px;
+                    @extend %faj;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #caebda;
+                    color: #212121;
+                  }
+                  & a.active {
+                    background: #f0c930;
+                    border: #f0c930;
+                  }
+                }
+              }
+            }
+          }
+          & .danshi {
+            margin-top: 10px;
+            & textarea {
+              width: 90%;
+              height: 200px;
+              border: 0px;
+              background: #fff;
+              resize: none;
+              padding: 4%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lookAllDiv {
+  @extend %flex;
+  @extend %fdc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #22563f;
+  & .lookAllDivTitle {
+    @extend %faj;
+    width: 100%;
+    height: 50px;
+    line-height: 1.493333rem;
+    background: rgb(175, 58, 49);
+    color: #FFF;
+    font-size: 18px;
+    & i {
+      @extend %faj;
+      width: 20%;
+      font-size: 20px;
+      color: #FFF;
+    }
+    & b.cont {
+      @extend %faj;
+      width: 60%;
+      font-weight: 400;
+    }
+    & span {
+      @extend %faj;
+      width: 20%;
+    }
+  }
+  & .lookAllUlBox {
+    width: 100%;
+    height: 93%;
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    left: 0px;
+    overflow-y: scroll;
+    & .lookAllUl {
+      width: 100%;
+      background: #22563f;
+      padding-bottom: 20px;
+      & li {
+        @extend %flex;
+        & p {
+          @extend %faj;
+          font-size: 14px;
+          color: #caebda;
+          padding: 4px 0px;
+          & a {
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            color: #caebda;
+            & img {
+              width: 200%;
+              height: 600%;
+            }
+          }
+        }
+        & p:nth-child(1) {
+          width: 30%;
+        }
+        & p:nth-child(2) {
+          width: 70%;
+        }
+        & p:nth-child(3) {
+          width: 30%;
+        }
+        & p:nth-child(1) {
+          position: relative;
+          border-right: 1px solid #212121;
+          & i {
+            font-weight: 700;
+            font-size: 16px;
+            color: #212121;
+            position: absolute;
+            right: -8px;
+          }
+        }
+      }
+      & li:nth-child(1) {
+        border-top: 1px solid hsla(0, 0%, 100%, .3);
+        border-bottom: 1px solid #212121;
+        & p:nth-child(1) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.betbj10-footer {
+  position: relative;
+  background: #333;
+  color: rgb(175, 58, 49);
+  width: 100;
+  & .betbj10-footer-top {
+    @extend %flex;
+    @extend %fdc;
+    position: absolute;
+    top: -60px;
+    background: #22563f;
+    width: 100%;
+    height: 60px;
+    color: #caebda;
+    font-size: 16px;
+    & .betbj10-footer-tops {
+      @extend %flex;
+      @extend %aitems;
+      height: 50%;
+      padding: 0px 16px;
+      & span {
+        color: #ffaf36;
+        width: 78%;
+        overflow: hidden;
+        height: 20px;
+        padding-left: 2%;
+      }
+      & p {
+        width: 20%;
+      }
+    }
+    & .betbj10-footer-buttoms {
+      @extend %flex;
+      @extend %aitems;
+      height: 50%;
+      & input {
+        width: 20%;
+        margin-left: 10px;
+        padding: 0px 4px;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        font-size: 16px;
+      }
+      & span {
+        @extend %flex;
+        @extend %aitems;
+        @extend %fdr;
+        width: 55%;
+        font-size: 12px;
+        margin-left: 6px;
+        & p {
+          text-align: center;
+          color: #ffaf36;
+          width: auto;
+        }
+      }
+      & p {
+        width: 20%;
+      }
+    }
+  }
+  & .betbj10-footer-buttom {
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    background: #414141;
+    height: 56px;
+    padding: 0px 16px;
+    & .betbj10-footer-buttom-left {
+      @extend %flex;
+      @extend %aitems;
+      & button {
+        background: none;
+        border: none;
+        color: #ffaf36;
+        font-size: 22px;
+        margin-right: 12px;
+      }
+      & p {
+        color: #fff;
+        font-size: 16px;
+        & span {
+          margin: 0px 4px;
+        }
+      }
+    }
+    & .betbj10-footer-buttom-right {
+      @extend %faj;
+      font-size: 18px;
+      height: 40px;
+      width: 100px;
+      color: #fff;
+      border-radius: 6px;
+      background: rgb(175, 58, 49);
+    }
+  }
+}
+
+.betcBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.betc {
+  @extend %flex;
+  @extend %fdc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -80px;
+  width: 320px;
+  background: #fff;
+  & li {
+    @extend %faj;
+    border-bottom: 1px solid #DFE4ED;
+    min-height: 30px;
+    font-size: 14px;
+  }
+  & li:nth-child(1) {
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    background: rgb(175, 58, 49);
+  }
+  & li:nth-child(2) {
+    min-height: 54px;
+    @extend %flex;
+    @extend %fdc;
+    padding: 4px 0px;
+    & p {
+      @extend %flex;
+      @extend %aitems;
+      padding: 4px 0px 4px 60px;
+      width: 100%;
+      & span {
+        width: 30%;
+      }
+      & span.popcon {
+        word-wrap: break-word;
+        width: 178px;
+      }
+      & b {
+        color: red;
+        font-weight: 400;
+      }
+    }
+  }
+  & li:nth-child(3) {
+    height: 40px;
+    & button {
+      width: 50%;
+      border: none;
+      color: #22563f;
+      background: none;
+    }
+    & button:nth-child(2) {
+      color: #dc3b40;
+    }
+  }
+}

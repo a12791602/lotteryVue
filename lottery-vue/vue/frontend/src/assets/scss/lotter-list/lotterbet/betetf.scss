@@ -1,0 +1,406 @@
+@import "../../main.scss";
+.betssc {
+  height: 100%;
+  @extend %flex;
+  @extend %fdc;
+  @extend %sbetween;
+  & .betssc-top {
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    height: 46px;
+    font-size: 16px;
+    padding: 0px 16px;
+    background: rgb(175,58,49);
+    background: black;
+    color: #fff;
+    & li {
+      width: 33.33%;
+    }
+    & li:nth-child(2) {
+      width: 56%;
+      text-align: center;
+      font-size: 12px;
+      @extend %faj;
+      & .wangfa {
+        margin: 0px;
+        margin-right: 4px;
+      }
+      & .menu {
+        @extend %faj;
+        padding: 2px 6px;
+        border: 1px solid hsla(0, 0%, 100%, .5);
+        border-radius: 4px;
+        color: #fff;
+        & i {
+          color: #f0c930;
+          font-size: 24px;
+        }
+      }
+      & .menu-list {
+        @extend %flex;
+        @extend %fdc;
+        position: absolute;
+        left: 0px;
+        top: 43px;
+        width: 100%;
+      }
+    }
+    & li:nth-child(3) {
+      text-align: right;
+      & ul {
+        @extend %flex;
+        @extend %fr;
+        position: absolute;
+        top: 44px;
+        right: 1px;
+        width: 160px;
+        background: #fff;
+        & li {
+          @extend %faj;
+          width: 50%;
+          font-size: 14px;
+          color: #000;
+          border-bottom: 1px solid #ddd;
+          padding: 6px 0px;
+        }
+      }
+    }
+    & i {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+
+.betssc-content {
+  height: 100%;
+  background: #317455;
+  overflow: hidden;
+  >div {
+    height: 100%;
+    & .betk3-content-top {
+      @extend %flex;
+      @extend %sbetween;
+      background: #22563f;
+      color: #caebda;
+      & .content-left {
+        @extend %flex;
+        @extend %aitems;
+        @extend %fdc;
+        width: 50%;
+        border-right: 1px solid #164630;
+        & p {
+          font-size: 16px;
+          line-height: 28px;
+        }
+        & div {
+          @extend %flex;
+          @extend %aitems;
+          margin-top: 4px;
+          & p {
+            @extend %faj;
+            width: 22px;
+            height: 22px;
+            overflow: hidden;
+            margin: 0px 2px;
+            border-radius: 50%;
+            background: #317455;
+            & img {
+              width: 200%;
+              height: 600%;
+            }
+          }
+          & i {
+            font-size: 30px;
+            color: #78ba9e;
+          }
+        }
+      }
+      & .content-right {
+        @extend %flex;
+        @extend %aitems;
+        @extend %fdc;
+        width: 50%;
+        & p {
+          font-size: 16px;
+          line-height: 28px;
+        }
+        & div {
+          & p {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    & .betk3-content-top-pop {
+      position: absolute;
+      width: 100%;
+      background: #22563f;
+      & ul {
+        & li {
+          @extend %flex;
+          & p {
+            @extend %faj;
+            font-size: 14px;
+            color: #caebda;
+            padding: 4px 0px;
+            & a {
+              width: 20px;
+              height: 20px;
+              overflow: hidden;
+              color: #caebda;
+              & img {
+                width: 200%;
+                height: 600%;
+              }
+            }
+          }
+          & p:nth-child(1) {
+            width: 30%;
+          }
+          & p:nth-child(2) {
+            width: 40%;
+          }
+          & p:nth-child(3) {
+            width: 30%;
+          }
+          & p:nth-child(1) {
+            position: relative;
+            border-right: 1px solid #212121;
+            & i {
+              font-weight: 700;
+              font-size: 16px;
+              color: #212121;
+              position: absolute;
+              right: -8px;
+            }
+          }
+        }
+        & li:nth-child(1) {
+          border-top: 1px solid hsla(0, 0%, 100%, .3);
+          border-bottom: 1px solid #212121;
+          & p:nth-child(1) {
+            border: none;
+          }
+        }
+      }
+    }
+    & .betk3-content-foot {
+      padding: 4px 16px 0px;
+      color: #caebda;
+      >div {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+        >.betssc-list-box {
+          width: 100%;
+          padding-bottom: 200px;
+          & b {
+            & i {
+              color: #f0c930;
+              font-style: normal;
+            }
+          }
+          & .fushi {
+            margin-top: 10px;
+            & li {
+              @extend %flex;
+              @extend %fdc;
+              & p {
+                @extend %flex;
+                margin-bottom: 6px;
+                & b {
+                  @extend %flex;
+                  @extend %jcontent;
+                  align-items: flex-start;
+                  width: 14%;
+                  padding-top: 6px;
+                }
+                & span {
+                  @extend %flex;
+                  @extend %fr;
+                  width: 86%;
+                  & a {
+                    @extend %faj;
+                    margin: 0px 26px 8px 0px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #caebda;
+                    color: #212121;
+                  }
+                  & a.active {
+                    background: #f0c930;
+                    border: #f0c930;
+                  }
+                }
+              }
+            }
+          }
+          & .danshi {
+            margin-top: 10px;
+            & textarea {
+              width: 90%;
+              height: 200px;
+              border: 0px;
+              background: #fff;
+              resize: none;
+              padding: 4%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.betssc-footer {
+  position: relative;
+  background: #000;
+  color: #ffaf36;
+  width: 100%;
+  & .betssc-footer-top {
+    @extend %flex;
+    @extend %fdc;
+    position: absolute;
+    top: -60px;
+    background: #22563f;
+    height: 60px;
+    color: #caebda;
+    font-size: 16px;
+    width: 100%;
+    & .betssc-footer-tops {
+      @extend %flex;
+      @extend %aitems;
+      height: 50%;
+      & span {
+        color: #ffaf36;
+        width: 210px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 20px;
+        padding-left: 2%;
+      }
+      & p {
+        width: 20%;
+        padding: 0 16px;
+      }
+    }
+    & .betssc-footer-buttoms {
+      @extend %flex;
+      @extend %aitems;
+      height: 50%;
+      & input {
+        width: 20%;
+        margin-left: 10px;
+        padding: 0px 4px;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+      }
+      & span {
+        width: 55%;
+        @extend %flex;
+        @extend %fdr;
+        font-size: 12px;
+        margin-left: 6px;
+        align-items: center;
+        & p {
+          text-align: center;
+          color: #ffaf36;
+          width: auto;
+        }
+      }
+      & p {
+        padding: 0 16px;
+        width: 20%;
+      }
+    }
+  }
+  & .betssc-footer-buttom {
+    background: #000;
+    height: 50px;
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    padding: 0px 16px;
+    & .betssc-footer-buttom-left {
+      @extend %flex;
+      @extend %aitems;
+      & button {
+        background: none;
+        border: none;
+        color: #ffaf36;
+        font-size: 22px;
+        margin-right: 12px;
+      }
+      & p {
+        color: #fff;
+        font-size: 16px;
+        & span {
+          margin: 0px 4px;
+        }
+      }
+    }
+    & .betssc-footer-buttom-right {
+      @extend %faj;
+      font-size: 18px;
+      height: 30px;
+      width: 100px;
+      color: #000;
+      border-radius: 4px;
+      background: #ffaf36;
+    }
+  }
+}
+
+.betc {
+  @extend %flex;
+  @extend %fdc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -80px;
+  width: 340px;
+  background: #ddd;
+  & li {
+    @extend %faj;
+    border-bottom: 1px solid #DFE4ED;
+    min-height: 30px;
+    font-size: 14px;
+  }
+  & li:nth-child(2) {
+    @extend %flex;
+    @extend %fdc;
+    min-height: 54px;
+    padding: 4px 0px;
+    & p {
+      @extend %flex;
+      @extend %aitems;
+      padding: 4px 0px 4px 60px;
+      width: 100%;
+      & span {
+        width: 30%;
+      }
+      & span.popcon {
+        word-wrap: break-word;
+        width: 178px;
+      }
+      & b {
+        color: red;
+        font-weight: 400;
+      }
+    }
+  }
+  & li:nth-child(3) {
+    & button {
+      width: 50%;
+      border: none;
+      color: #22563f;
+      background: none;
+    }
+  }
+}

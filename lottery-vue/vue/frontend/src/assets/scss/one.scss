@@ -1,0 +1,133 @@
+@import "./main.scss";
+.notice-bar {
+  @extend %flex;
+  @extend %aitems;
+  @extend %sbetween;
+  background: #fff !important;
+  color: #333;
+  height: 46px;
+  padding: 0px 14px !important;
+  & span{
+    width: 18px;
+    & i{
+      color:#f60;
+      font-size: 22px;
+    }
+    
+  }
+  & marquee{
+    color:#f60;
+  }
+}
+
+.notice-bar__left-icon {
+  color: #dc3b40;
+}
+
+.add {
+  position: relative;
+  @extend %aitems;
+  height: 46px;
+  border-bottom: 1px solid #E9E9E9;
+  background: #fff;
+  width:90%;
+}
+.add2 {
+  height: 46px;
+  width:10%;
+}
+
+.one-center {
+  height: 100%;
+  background: #fff;
+  ul.lotteryList {
+    @extend %flex;
+    @extend %fr;
+    background: #fff;
+    margin: 6px 0px 0px;
+    width: 100%;
+    border-top: 1px solid #DFE4ED;
+    & li {
+      @extend %faj;
+      @extend %fdc;
+      border: 1px solid #DFE4ED;
+      border-top: 0px solid #DFE4ED;
+      border-left: 0px solid #DFE4ED;
+      width: 33%;
+      padding: 0px 0 5px;
+      & span {
+        @extend %faj;
+        width: 50%;
+        height: auto;
+        padding: 10px 0px;
+        border-radius: 50%;
+        & i.iconfont{
+          font-size: 56px;
+        }
+      }
+      & h5 {
+        font-weight: 400;
+        font-size: 14px;
+        color: #777;
+        padding: 2px;
+      }
+    }
+    & .lotter-list {
+      & i {
+        padding: 20px 0px;
+        color: #fa7e00;
+        font-size: 50px !important;
+      }
+    }
+    & li:nth-child(3n) {
+      border-right: 0px;
+    }
+  }
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.el-carousel__container {
+  height: 180px !important;
+}
+
+.el-carousel {
+  height: 180px !important;
+}
+
+.el-carousel__indicators {
+  display: none;
+}
+
+.el-carousel {
+  //  margin-top: 46px;
+}
+
+.el-carousel__item {
+  box-sizing: border-box;
+  vertical-align: middle;
+  & img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: none;
+  }
+}
+.swipe {
+  position: relative;
+  height: 100%;
+  padding-top: 50px;
+  min-height: 170px;
+  max-height: 180px;
+  & .swipe-item {
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

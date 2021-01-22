@@ -1,0 +1,27 @@
+@import '../../../main.scss';
+.bet-content-top {
+    & .content-right {
+      @extend %flex;
+      @extend %sbetween;
+      @extend %aitems;
+      width: 50%;
+      height: 60px;
+      padding-left: 10px;
+      & .seasonId {
+        font-size: 16px;
+        line-height: 28px;
+      }
+      & .time {
+        @extend %faj;
+        height: 32px;
+        & p {
+          font-size: 26px;
+        }
+      }
+      & i {
+        font-size: 30px;
+        color: #78ba9e;
+        margin-right: -10px;
+      }
+    }
+  }

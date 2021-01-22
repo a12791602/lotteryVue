@@ -1,0 +1,349 @@
+@import './main.scss';
+.past{
+  position: relative;
+}
+.second {
+  @extend %flex;
+  @extend %fdc;
+  min-height: calc(100% + 1px);
+  height: auto;
+  width: 100%;
+  & .one-top {
+    color: #fff;
+  }
+  .second-conter {
+    margin: 66px 10px 0px;
+    height: 556px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    & .secondBox {
+      & li {
+        background: #fff;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.title {
+  @extend %flex;
+  @extend %sbetween;
+  @extend %aitems;
+  border-bottom: 1px solid #eee;
+  padding: 0px 10px;
+  height: 38px;
+  & h2 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  & p {
+    & span:nth-child(1) {
+      margin-right: 10px;
+      & i {
+        font-style: inherit;
+      }
+    }
+    & span:nth-child(2) {
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 0px 6px;
+      font-size: 12px;
+      & i {
+        font-style: inherit;
+      }
+    }
+  }
+}
+
+.conter.k3 {
+  @extend %faj;
+  height: 60px;
+  & span.Dice {
+    @extend %faj;
+    width: 44px;
+    height: 44px;
+    background-image: url(../../assets/img/one/diceK3.png);
+    background-size: 200% 600%;
+    vertical-align:middle;
+  }
+  & span.Dice.Dice1{
+    background-position: 0 0;
+  }
+  & span.Dice.Dice2{
+    background-position: 0 -100%;
+  }
+  & span.Dice.Dice3{
+    background-position: 0 -200%;
+  }
+  & span.Dice.Dice4{
+    background-position: 0 -300%;
+  }
+  & span.Dice.Dice5{
+    background-position: 0 -400%;
+  }
+  & span.Dice.Dice6{
+    background-position: 0 -500%;
+  }
+}
+.conter.ssc {
+  @extend %faj;
+  height: 60px;
+  & span {
+    @extend %faj;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin: 0px 4px;
+  }
+}
+.conter.pk10 {
+  @extend %faj;
+  height: 60px;
+  & span {
+    @extend %faj;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin: 0px 4px;
+  }
+}
+
+.btn {
+  @extend %faj;
+  height: 50px;
+  & button {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 6px 20px;
+    color: #000;
+    background: #fff;
+    margin: 0px 4px;
+  }
+}
+
+.past {
+  & header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2018;
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    height: 56px;
+    background: #af3a31;
+    color: #fff;
+    font-size: 16px;
+    & i {
+      font-size: 24px;
+      margin-left: 16px;
+    }
+    & span{
+      margin-right: 16px;
+    }
+    & p {
+      & span {
+        margin: 0px 6px;
+      }
+    }
+  }
+}
+
+.pastBox {
+  position: fixed;
+  top:56px;
+  left: 0px;
+  width: 100%;
+  z-index: 2018;
+  & ul {
+    height: 40px;
+    background: #AE9880;
+    color: #fff;
+    @extend %flex;
+    @extend %aitems;
+    @extend %sbetween;
+    & li {
+      @extend %faj;
+      width: 33.33%;
+      height: 36px;
+      border-bottom: 4px solid #AE9880;
+    }
+    & li.active {
+      border-bottom: 4px solid #af3a31;
+    }
+  }
+}
+
+.pastList {
+  margin: 106px 10px 10px;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  & ul {
+    & li {
+      background: #fff;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    & li:last-child(){
+      margin: 0px;
+    }
+  }
+}
+
+.pastListTitle {
+  @extend %flex;
+  @extend %sbetween;
+  @extend %aitems;
+  border-bottom: 1px solid #eee;
+  padding: 0px 10px;
+  height: 38px;
+  & p {
+    @extend %flex;
+    @extend %aitems;
+    & i {
+      font-style: inherit;
+      margin-right: 2px;
+      font-size: 14px;
+    }
+    & span {
+      @extend %faj;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-left: 6px;
+      padding: 0px 10px;
+    }
+    
+  }
+  & .pastListTitlessc {
+    display: none;
+  }
+}
+
+.pastListCenter {
+  @extend %flex;
+  @extend %sbetween;
+  @extend %aitems;
+  height: 60px;
+  padding: 0px 10px;
+  & .k3 {
+    @extend %flex;
+    & span {
+      @extend %faj;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      margin: 0px 4px;
+      font-size: 16px;
+    }
+  }
+  & .ssc {
+    @extend %flex;
+    & span {
+      @extend %faj;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      margin: 0px 2px;
+    }
+  }
+  & .pk10 {
+    width: 170px;
+    @extend %flex;
+    @extend %fr;
+    & span {
+      @extend %faj;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #999;
+      border-radius: 50%;
+      margin: 0px 4px;
+    }
+  }
+  & div:nth-child(2) {
+    @extend %flex;
+    & span {
+      @extend %faj;
+      width: 50px;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
+}
+.pastListCenter.ssc{
+  @extend %faj;
+  & .ssc {
+    @extend %flex;
+    & span {
+      @extend %faj;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #999;
+      border-radius: 50%;
+      margin: 0px 2px;
+      font-size: 16px;
+    }
+  }
+}
+.goodluck {
+  @extend %faj;
+  width: 19px;
+  height: 19px;
+  font-style: inherit;
+  background: #5691D7;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.goodidea {
+  @extend %faj;
+  width: 19px;
+  height: 19px;
+  font-style: inherit;
+  background: #FF961F;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.checkList{
+  width: 100%;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  background: #fff;
+  border-bottom:4px solid #AE9880;
+  & .checkLisTitle{
+    height: 36px;
+    line-height: 36px;
+    margin: 10px 16px 0px;
+    border-bottom:1px solid #AE9880;
+  }
+  & ul{
+    margin: 10px 16px 10px;
+    @extend %flex;
+    @extend %fdr;
+    @extend %fr;
+    & li{
+      @extend %faj;
+      width: 100px;
+      height: 30px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      margin:0px 0px 10px 0px;
+    }
+    & li.active{
+      border: 1px solid rgb(231, 49, 49);
+    }
+    & li:nth-child(3n+2){
+      margin: 0px 10px;
+    }
+  }
+}

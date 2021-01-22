@@ -1,0 +1,63 @@
+@import "./main.scss";
+.pop2 {
+  @extend %faj;
+  color: #5e5e5e;
+  font-size: 14px;
+  border-radius: 10px;
+  max-width: 400px;
+  min-width: 180px;
+  & div {
+    width: 100%;
+    @extend %faj;
+    & ul {
+      width: 100%;
+      & li {
+        @extend %faj;
+        @extend %fdc;
+        width: 100%;
+      }
+      & .title {
+        border-radius: 8px 8px 0 0;
+        height: 36px;
+        background: rgb(175, 58, 49);
+        color: #fff;
+        font-size: 14px;
+      }
+      & .cont {
+        padding: 14px 0px;
+        width: 80%;
+        margin: auto;
+        & .contBox {
+          width: 80%;
+          @extend %flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          min-height: 30px;
+          & ul {
+            width: 100%;
+            & li {
+              height: 36px;
+            }
+          }
+        }
+      }
+      & .but {
+        @extend %flex;
+        @extend %fdr;
+        & button {
+          height: 40px;
+          background: #fff;
+          width: 100%;
+          border: none;
+          font-size: 14px;
+          border-top: 1px solid #e8e8e8;
+          border-radius: 0 0 8px 8px;
+        }
+        & button:nth-child(1) {
+          color: #dc3b40;
+        }
+      }
+    }
+  }
+}
+

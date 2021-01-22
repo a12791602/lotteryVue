@@ -1,0 +1,79 @@
+@import "../../main.scss";
+.verifySafePwd {
+  background: #efeef4;
+  height: 100%;
+}
+
+.zhaohui {
+  @extend %flex,%aitems;
+  height: 36px;
+  padding-right: 16px;
+  font-size: 14px;
+  justify-content: flex-end;
+  color: #dc2e2e;
+}
+
+.verifySafePwd-top {
+  @extend %faj;
+  width: 100%;
+  height: 46px;
+  font-size: 20px;
+  background: rgb(175, 58, 49);
+  & i {
+    @extend %faj;
+    width: 20%;
+    color: #fff;
+  }
+  & p {
+    @extend %faj;
+    width: 60%;
+    color: #fff;
+  }
+  & span {
+    @extend %faj;
+    width: 20%;
+  }
+}
+
+.verifySafePwd-input {
+  @extend %flex;
+  @extend %aitems;
+  padding: 0 20px;
+  background: #fff;
+  height: 56px;
+  margin-top: 12px;
+  font-size: 16px;
+  & p {
+    margin-right: 20px;
+  }
+  & input {
+    width: 200px;
+    height: 30px;
+    border: none;
+  }
+}
+
+.verifySafePwd-but {
+  @extend %flex;
+  @extend %jcontent;
+  margin-top: 20px;
+  & button {
+    padding: 0px;
+    background:#F94E4E;
+    border: none;
+    width: 86%;
+    height: 36px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+.verifySafePwd-tisi {
+  border: 1px solid #f8e2b9;
+  background: #fffdeb;
+  color: #f46e00;
+  font-size: 16px;
+  margin: 16px;
+  padding: 6px;
+}

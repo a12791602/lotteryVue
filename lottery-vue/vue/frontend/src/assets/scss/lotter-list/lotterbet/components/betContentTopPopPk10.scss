@@ -1,0 +1,10 @@
+@import '../../../main.scss';
+.bet-content-top-pop {
+  & .look {
+    & li {
+      & p:nth-child(2) {
+        width: 70%;
+      }
+    }
+  }
+}
